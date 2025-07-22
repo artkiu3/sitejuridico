@@ -1,1 +1,36 @@
-# sitejuridico
+# Ignora o núcleo do WordPress
+wp-admin/
+wp-includes/
+
+# Ignora arquivos sensíveis
+wp-config.php
+.htaccess
+.env
+
+# Ignora uploads (opcional — se não quiser subir imagens, etc.)
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/backups/
+
+# Ignora arquivos temporários e logs
+*.log
+*.sql
+*.tar.gz
+*.zip
+*.gz
+*.rar
+
+# Ignora arquivos de sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ignora arquivos do Laravel caso tenha instalado junto (Laragon full stack)
+vendor/
+node_modules/
+composer.lock
+package-lock.json
+
+# Ignora banco exportado localmente
+database/
